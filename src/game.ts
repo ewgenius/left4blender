@@ -19,7 +19,7 @@ class Game {
   }
 
   run() {
-    this.data.load("/scenes/test2.json", () => {
+    this.data.load("/scenes/test4.json", () => {
       this.app.enable_controls();
       this.app.enable_camera_controls();
     });

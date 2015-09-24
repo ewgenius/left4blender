@@ -13,7 +13,7 @@ var Game = (function () {
     };
     Game.prototype.run = function () {
         var _this = this;
-        this.data.load("/scenes/test2.json", function () {
+        this.data.load("/scenes/test4.json", function () {
             _this.app.enable_controls();
             _this.app.enable_camera_controls();
         });
