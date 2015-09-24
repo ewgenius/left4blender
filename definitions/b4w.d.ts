@@ -1,7 +1,11 @@
 declare module b4w {
-  export function require(moduleId: String, namespace?: String): Module
+  export function require(moduleId: String, namespace?: String): Module;
 
-  export function register(moduleId: String, namespace?: String): any
+  export function register(moduleId: String, module: Module): any;
+
+  export function get_namespace (namespace): any;
+
+  export function module_check (moduleId): any;
 
   export interface App {
     init(params: any): void;
@@ -10,7 +14,6 @@ declare module b4w {
   }
 
   export interface Module {
-
   }
 
   export class Controls implements Module {
