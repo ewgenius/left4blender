@@ -4,11 +4,13 @@ class Game {
   app: b4w.App;
   data: b4w.Data;
   controls: b4w.Controls;
+  scenes: b4w.Scenes;
 
   constructor() {
     this.app = <b4w.App>b4w.require('app');
     this.data = <b4w.Data>b4w.require('data');
     this.controls = <b4w.Controls>b4w.require('controls');
+    this.scenes = <b4w.Scenes>b4w.require('scenes');
   }
 
   init() {
@@ -28,6 +30,7 @@ class Game {
   static main() {
     var game: Game = new Game();
     game.init();
+    window['game'] = game;
   }
 }
 
